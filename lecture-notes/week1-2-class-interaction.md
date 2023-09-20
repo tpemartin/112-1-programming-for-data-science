@@ -30,16 +30,16 @@ Use Github Desktop to setup version control for the folder. The folder chosen wi
   3. Click "Add Local Repository".  
   4. Select the folder you created in step a.  
   5. Click "Create Repository".
-   ![](../img/Create%20repository.png)
+   ![](img/Create%20repository.png)
   6. Click "Publish Repository".  
-   ![](../img/publish%20repo.png)
+   ![](img/publish%20repo.png)
    Make sure **keep this code private** is NOT checked.
-   ![](../img/publish%20repo2.png)
+   ![](img/publish%20repo2.png)
     7. Click "Publish Repository" again.
     8. You're done!
 
 You can click **View on Github** to see your repository on Github.com.
-![](../img/view%20on%20gh.png)
+![](img/view%20on%20gh.png)
 
 ### c. Setup R project  
 
@@ -62,7 +62,7 @@ In each class, you will
   2. Click "File" in the menu bar.
   3. Click "New File".  
   4. Click "R Script".  
-  5. Click ![](../img/Save.png) to save file.  
+  5. Click ![](img/Save.png) to save file.  
 
 
 During the class, you will type codes in the R script file. You can save the file at any time. You can also run the codes in the file at any time. We will learn how to run codes in the next class.
@@ -96,7 +96,7 @@ As long as each time you have backed up to Github, you can download your reposit
  3. Click "Clone Repository".  
  4. Click "URL".  
  5. Copy the URL of [your repository from Github.com](https://github.com/tpemartin/112-1-r-4-data-science).  
-   ![](../img/clone%20repo.png)
+   ![](img/clone%20repo.png)
  6. Paste the URL in the "URL" field.  
  7. Click "Choose..." to select a folder to store your repository.  
  8. Click "Clone".  
