@@ -200,37 +200,6 @@ split_flightsData[[.x]] |>
   )
 ```
 
-
-<table class="dataframe">
-<caption>A grouped_df: 18 × 24</caption>
-<thead>
-	<tr><th scope=col>AirlineID</th><th scope=col>ScheduleStartDate</th><th scope=col>ScheduleEndDate</th><th scope=col>FlightNumber</th><th scope=col>DepartureAirportID</th><th scope=col>DepartureTime</th><th scope=col>CodeShare</th><th scope=col>ArrivalAirportID</th><th scope=col>ArrivalTime</th><th scope=col>Monday</th><th scope=col>⋯</th><th scope=col>Saturday</th><th scope=col>Sunday</th><th scope=col>UpdateTime</th><th scope=col>VersionID</th><th scope=col>Terminal</th><th scope=col>num_codeShare</th><th scope=col>DepartureTimeZone</th><th scope=col>ArrivalTimeZone</th><th scope=col>DepartTaiwan</th><th scope=col>ArriveTaiwan</th></tr>
-	<tr><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;date&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dttm&gt;</th><th scope=col>&lt;list&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>⋯</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;lgl&gt;</th></tr>
-</thead>
-<tbody>
-	<tr><td>BR</td><td>2023-10-09</td><td>2023-10-15</td><td>BR051 </td><td>IAH</td><td>NA</td><td>NULL</td><td>TPE</td><td>06:00+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>BR</td><td>2023-10-16</td><td>2023-10-22</td><td>BR051 </td><td>IAH</td><td>NA</td><td>NULL</td><td>TPE</td><td>06:00+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>BR</td><td>2023-10-23</td><td>2023-10-28</td><td>BR051 </td><td>IAH</td><td>NA</td><td>NULL</td><td>TPE</td><td>06:00+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td>FALSE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>BR</td><td>2023-10-09</td><td>2023-10-15</td><td>BR055 </td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>BR</td><td>2023-10-16</td><td>2023-10-22</td><td>BR055 </td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>BR</td><td>2023-10-23</td><td>2023-10-28</td><td>BR055 </td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td>FALSE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>CM</td><td>2023-10-09</td><td>2023-10-15</td><td>CM8019</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>CM</td><td>2023-10-16</td><td>2023-10-22</td><td>CM8019</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>CM</td><td>2023-10-23</td><td>2023-10-28</td><td>CM8019</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td>FALSE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>SQ</td><td>2023-10-09</td><td>2023-10-15</td><td>SQ5821</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>SQ</td><td>2023-10-16</td><td>2023-10-22</td><td>SQ5821</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>SQ</td><td>2023-10-23</td><td>2023-10-28</td><td>SQ5821</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td>FALSE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>TG</td><td>2023-10-09</td><td>2023-10-15</td><td>TG6265</td><td>IAH</td><td>NA</td><td>NULL</td><td>TPE</td><td>06:00+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>TG</td><td>2023-10-16</td><td>2023-10-22</td><td>TG6265</td><td>IAH</td><td>NA</td><td>NULL</td><td>TPE</td><td>06:00+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>TG</td><td>2023-10-23</td><td>2023-10-28</td><td>TG6265</td><td>IAH</td><td>NA</td><td>NULL</td><td>TPE</td><td>06:00+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td>FALSE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>TG</td><td>2023-10-09</td><td>2023-10-15</td><td>TG6273</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>TG</td><td>2023-10-16</td><td>2023-10-22</td><td>TG6273</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td> TRUE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-	<tr><td>TG</td><td>2023-10-23</td><td>2023-10-28</td><td>TG6273</td><td>ORD</td><td>NA</td><td>NULL</td><td>TPE</td><td>05:25+1</td><td>TRUE</td><td>⋯</td><td>TRUE</td><td>FALSE</td><td>2023-10-10T08:26:07+08:00</td><td>1111</td><td>2</td><td>0</td><td>America/Chicago</td><td>Asia/Taipei</td><td>FALSE</td><td>TRUE</td></tr>
-</tbody>
-</table>
-
-
-
 ### dplyr::group_by
 
 So far we have ...
