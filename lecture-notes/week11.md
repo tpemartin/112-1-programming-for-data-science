@@ -191,6 +191,14 @@ flightsData
 
 ```
 
+# Function
+
+Sometimes you want to reuse a block of code with a slightly different setup. You can do this by writing a function that wraps around the programming block. 
+
+## 1. resuse on other objects
+
+`function_name <- function(object_name_to_be_substituted_inside_the_programming_block) { programming block }`
+
 
 ```R
 # sum odd index values
@@ -203,10 +211,6 @@ fullValues <- c(45.4, 44.8, 37.3, 37.9, 28, 11.8, 39.7, 18.4, 41.2, 29.8, 1,
 } 
 
 ```
-
-## 1. resuse on other objects
-
-`function_name <- function(object_name_to_be_substituted_inside_the_programming_block) { programming block }`
 
 
 ```R
@@ -329,4 +333,45 @@ parse_departureTime <- function(flightsData){
 ```R
 flightsData2
 parse_departureTime(flightsData2)
+```
+
+
+```R
+flights <- readRDS("../data/flights_week11.rds")
+flightsData <- flights$data[[1]]$data_frame
+```
+
+
+```R
+dplyr::glimpse(flightsData)
+```
+
+
+```R
+library(dplyr)
+
+# select relevant columns
+flightsData |>
+  select(ScheduleStartDate, ArrivalTime, ArrivalTimeZone) -> flightsData_selected
+
+# rename for parse_departureTime function to work
+names(flightsData_selected)[c(2,3)] <- c("DepartureTime", "DepartureTimeZone")
+
+```
+
+
+```R
+flightsData_renamed_parsed <- parse_departureTime(flightsData_renamed)
+dplyr::glimpse(flightsData_renamed_parsed)
+```
+
+
+```R
+flightsData[,c("ArriavlTime", "ArrivalTimeZone")] <- 
+    flightsData_renamed_parsed[,c("DepartureTime", "DepartureTimeZone")]
+```
+
+
+```R
+glimpse(flightsData)
 ```
