@@ -1,11 +1,16 @@
+```R
+# To ensure Chinese characters are displayed correctly
+options(encoding = "UTF-8")
+Sys.setlocale("LC_CTYPE", "zh_TW.UTF-8")
+```
+
 # Recap
 
 ## week 8, 9 & 10
 
+Previously. `ScheduleStartDate` is in `Date` class, `DepartureTime` is still in `character` class. Our goal is to have a `Date/Time` class `DepartureTime`. 
 
-
-Previously. `ScheduleStartDate` is in `Date` class, `DepartureTime` is still in `character` class.
-
+> However only a string like "2018-01-01 10:09" with its timezone supplied can be converted to a `Date/Time` class.
 
 
 ```R
