@@ -58,10 +58,8 @@ chosenColumns <-
 list_summary_frequency <-
   vector("list", length(chosenColumns))
 names(list_summary_frequency) <- chosenColumns
-for(.x in seq_along(chosenColumns)){
-  columnX <- chosenColumns[[.x]]
-  list_summary_frequency[[columnX]] <-
-    summarise_frequency(dataSet[[columnX]])
+for(.x in chosenColumns){
+  list_summary_frequency[[.x]] <-
+    summarise_frequency(dataSet[[.x]])
 }
 View(list_summary_frequency)
-
