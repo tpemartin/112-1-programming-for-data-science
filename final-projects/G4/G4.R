@@ -3,15 +3,25 @@ CANCER <- read_csv("https://raw.githubusercontent.com/LIAOMINSHIU/112-1-final-pr
 dplyr::glimpse(CANCER)
 
 CANCER |>
-  dplyr::filter(
-    縣市別=="全國"
-  ) |>
+  # dplyr::filter(
+  #   縣市別=="全國"
+  # ) |>
   dplyr::select(
-    癌症診斷年, 癌症別, 性別, 癌症發生數
+    癌症診斷年, 癌症別, 縣市別, 性別, 癌症發生數
   ) |>
   tidyr::pivot_wider(
     names_from = "性別",
     values_from = "癌症發生數"
+  ) |>
+  dplyr::mutate(
+    男女比=男/女
+  ) |>
+  dplyr::select(
+    癌症診斷年, 癌症別, 縣市別,男女比
+  ) |>
+  tidyr::pivot_wider(
+    names_from = "縣市別",
+    values_from = "男女比"
   ) |>
   View()
 #rename----
