@@ -58,9 +58,13 @@ View(md24hrs)
 table(md24hrs$服務類型)
 
 # 利用電話區域碼分析地區數量（北、中、南）----
+md$電話 |> head()
 md$電話 |>
   # 有"("或")"就斷開
   stringr::str_split("[()]") -> split_phone
+
+md$電話 |> head()
+split_phone[[1]]
 zip = vector("character", length(split_phone))
 for(i in seq_along(zip)){
   zip[[i]] <- split_phone[[i]][[2]]

@@ -1,6 +1,19 @@
 library(readr)
 CANCER <- read_csv("https://raw.githubusercontent.com/LIAOMINSHIU/112-1-final-project-1/main/File_22018.csv")
 dplyr::glimpse(CANCER)
+
+CANCER |>
+  dplyr::filter(
+    縣市別=="全國"
+  ) |>
+  dplyr::select(
+    癌症診斷年, 癌症別, 性別, 癌症發生數
+  ) |>
+  tidyr::pivot_wider(
+    names_from = "性別",
+    values_from = "癌症發生數"
+  ) |>
+  View()
 #rename----
 ##library(dplyr)
 ##CANCER |>
