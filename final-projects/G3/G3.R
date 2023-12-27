@@ -54,6 +54,17 @@ md |>
 
 View(md24hrs)
 
+# 分析充電站類型服務時段（24小時服務站點數量）
+table(md24hrs$服務類型)
 
-# 分析地區（北、中、南）
-sort(number, decreasing = T)
+# 利用電話區域碼分析地區數量（北、中、南）----
+md$電話 |>
+  # 有"("或")"就斷開
+  stringr::str_split("[()]") -> split_phone
+zip = vector("character", length(split_phone))
+for(i in seq_along(zip)){
+  zip[[i]] <- split_phone[[i]][[2]]
+}
+table(zip) |>
+  sort(decreasing=T)
+
