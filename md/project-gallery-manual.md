@@ -2,6 +2,7 @@
 
 #### 作品展示
 
+建議用chrome或firefox瀏覽器開啟，
 <https://tpemartin.github.io/project-gallery/r-112-1/>
 
 
