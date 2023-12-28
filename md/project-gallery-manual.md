@@ -1,3 +1,10 @@
+### 作品展示頁使用說明
+
+#### 作品展示
+
+<https://tpemartin.github.io/project-gallery/r-112-1/>
+
+
 #### 登入
 
 ![](img/icon-login.png): 登入鍵，請用[組員資訊](https://docs.google.com/spreadsheets/d/1Z7rTyOesELNgjst5zFU9uFEAqFqc3I7jB_1j3rKQe9c/edit####gid=790505392)所留的信箱登入。 要登出只需重整頁面即可。
