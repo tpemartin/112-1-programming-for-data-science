@@ -192,3 +192,15 @@ assessment$`member grades` |>
     pg |>
       record_memberGradesJson(.x, namelist)
   }, .init=member_grades) -> member_grades
+
+
+project_grades |>
+  purrr::map(function(.x) mean(.x, na.rm=T)) ->
+  project_grades_studentAssessment
+
+member_grades |>
+  purrr::map(function(.x){
+    if(is.null(.x)) return(0)
+    mean(as.numeric(.x))
+  }) ->
+  member_grades_studentAssessment
